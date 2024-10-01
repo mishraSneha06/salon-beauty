@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+body{
+    background-color: #eebfca;
+}
+
+.product-section {
+    text-align: center;
+    padding: 4rem;
+}
+.product-section h1{
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 2rem;
+    align-items:center;
+}
+
+.product {
+    border: 0.0625rem solid #ddd; /* 1px */
+    padding: 0.625rem; /* 10px */
+    max-width: 60%; /* 200px */
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    transition:.8s ease;
+}
+
+.product img:hover{
+    transform:scale(1.5);
+}
+
+.product h3 {
+    font-size: 1.2rem;
+}
+
+.cart {
+    margin-top: 1.25rem; /* 20px */
+    text-align: left;
+    display: inline-block;
+    width: 40%; /* 300px */
+    border: 0.0625rem solid #ddd; /* 1px */
+    padding: 0.625rem; /* 10px */
+    background-color: white;
+}
+
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart ul li {
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+button {
+    background-color: #ff4081;
+    border: none;
+    padding: 0.625rem; /* 10px */
+    color: white;
+    cursor: pointer;
+    width: 30%;
+}
+
+button:hover {
+    background-color: #ff7091;
+}
+
+
+@media(max-width:800px){
+    .product-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:500px){
+    .product-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

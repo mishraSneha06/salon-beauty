@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="buyProduct.css">
+</head>
+<body>
+    <div class="product-section">
+        <h1>Buy Our Products</h1>
+        <div class="product-container">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="shampooPic.jpeg" alt="Product 1">
+                <h3>Shampoo</h3>
+                <p>$15</p>
+                <button class="add-to-cart" data-name="Shampoo" data-price="15">Add to Cart</button>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="serumPic.jpeg" alt="Product 2">
+                <h3>Hair Serum</h3>
+                <p>$25</p>
+                <button class="add-to-cart" data-name="Hair Serum" data-price="25">Add to Cart</button>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="maskPic.jpeg" alt="Product 3">
+                <h3>Face Mask</h3>
+                <p>$20</p>
+                <button class="add-to-cart" data-name="Face Mask" data-price="20">Add to Cart</button>
+            </div>
+
+            <!--PRODUCT 4-->
+            <div class="product">
+                <img src="makeupPic.jpeg" alt="Product 4">
+                <h3>Makeup</h3>
+                <p>$20</p>
+                <button class="add-to-cart" data-name="Makeup" data-price="20">Add to Cart</button>
+            </div>
+        </div>
+        
+        <h1>Your Cart</h1>
+        <div class="cart">
+            <ul id="cart-items">
+                <!-- Cart items will appear here -->
+            </ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="buyProduct.js"></script>
+</html>

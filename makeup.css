@@ -1,0 +1,47 @@
+:root{
+    --bg-color:pink;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background-color: var(--bg-color);
+    
+}
+
+h1{
+    margin: 2rem;
+}
+
+.makeup-intro{
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.makeup-intro .makeup-content{
+    width: 60vw;
+    border: 2px solid white;
+}
+
+.makeup-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items:flex-start;
+    padding:2re
+}
+.makeup-container .makeup-box{
+      width: 70%;
+      height: 20%;
+
+      border: 2px solid white;
+}

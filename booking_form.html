@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Salon Booking Form</title>
+  <link rel="stylesheet" href="booking_form.css">
+</head>
+<body>
+  <!-- Booking Form -->
+  <div class="booking-form-container">
+    <h2>Book an Appointment</h2>
+    <form id="bookingForm">
+      <!-- Service Selection -->
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="">--Select a Service--</option>
+        <option value="haircut">Haircut</option>
+        <option value="manicure">Manicure</option>
+        <option value="massage">Massage</option>
+        <option value="facial">Facial</option>
+        <option value="facial">Bronze Package</option>
+        <option value="facial">Silver Package</option>
+        <option value="facial">Gold Package</option>
+      </select>
+
+      <!-- Date Selection -->
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <!-- Time Selection -->
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <!-- Submit Button -->
+      <button type="submit">Book Now</button>
+    </form>
+
+    <!-- Confirmation Message -->
+    <div id="confirmationMessage" class="hidden">
+      <p>Your appointment has been booked successfully!</p>
+    </div>
+  </div>
+
+  <script src="booking_form.js"></script>
+</body>
+</html>
